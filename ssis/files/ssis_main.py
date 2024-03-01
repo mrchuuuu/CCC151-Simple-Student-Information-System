@@ -56,9 +56,13 @@ def view_student():
                 
         enter_year = Label(add_window_label, text = "Enter Student Year Level: ", bg = '#5c9ca3')
         enter_year.grid(row = 2, column = 0)
+        """
         student_year_input = Entry(add_window_label, width = 30)
         student_year_input.grid(row = 2, column = 1)
-                
+        """
+        student_year_input = Combobox(add_window_label, values = ["1", "2", "3", "4"])
+        student_year_input.grid(row = 2, column = 1)
+               
         enter_gender = Label(add_window_label, text = "Enter Student Gender: ", bg = '#5c9ca3')
         enter_gender.grid(row = 3, column = 0)
         student_gender_input = Entry(add_window_label, width = 30)
