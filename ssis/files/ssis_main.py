@@ -16,7 +16,7 @@ def view_student():
 
     def view_data(csv_path):
         student_list = []
-        with open('data/student.csv', 'r', newline = '') as student_file:
+        with open(csv_path, 'r', newline = '') as student_file:
             reader = csv.reader(student_file)
             for row in reader:
                 student_list.append(row)
@@ -25,7 +25,7 @@ def view_student():
         return student_list
     
     def display_data():
-        csv_path = 'data/student.csv'
+        csv_path = 'ssis/data/student.csv'
         data = view_data(csv_path)
         for row in data:
             listbox.insert(END, row)
@@ -83,7 +83,7 @@ def view_student():
             return column_data
         
         column_index = 0
-        column_data = combobox_values('data/course.csv', column_index)
+        column_data = combobox_values('ssis/data/course.csv', column_index)
         student_course_input = Combobox(add_window_label, values = column_data)
         student_course_input.grid(row = 4, column = 1)
         student_course_input.current() 
@@ -101,7 +101,7 @@ def view_student():
                             'Gender': student_gender, 
                             'Course': student_course}
 
-            with open('data/student.csv', 'a', newline = '') as student_file:
+            with open('ssis/data/student.csv', 'a', newline = '') as student_file:
                 writer = csv.DictWriter(student_file, fieldnames = field_names)
             
                 if student_file.tell() == 0:
@@ -128,7 +128,7 @@ def view_student():
         if selected_index:
             listbox.delete(selected_index)
                 
-            csv_path = 'data/student.csv'
+            csv_path = 'ssis/data/student.csv'
             with open(csv_path, 'r', newline = '') as student_file:
                 data = list(csv.reader(student_file))
                     
@@ -152,7 +152,7 @@ def view_student():
         if selected_index:
             listbox.delete(selected_index)
                 
-            csv_path = 'data/student.csv'
+            csv_path = 'ssis/data/student.csv'
             with open(csv_path, 'r', newline = '') as student_file:
                 data = list(csv.reader(student_file))
             with open(csv_path, 'w', newline = '') as student_file:
@@ -183,7 +183,7 @@ def view_course():
         return data
     
     def display_data():
-        csv_path = 'data/course.csv'
+        csv_path = 'ssis/data/course.csv'
         data = view_data(csv_path)
         for row in data:
             listbox.insert(END, row)
@@ -226,7 +226,7 @@ def view_course():
             field_names = ['Course Code', 'Course Name']
             course_data = {'Course Code': course_code,'Course Name': course_name}
 
-            with open('data/course.csv', 'a', newline = '') as course_file:
+            with open('ssis/data/course.csv', 'a', newline = '') as course_file:
                 writer = csv.DictWriter(course_file, fieldnames = field_names)
                 
                 if course_file.tell() == 0:
@@ -251,7 +251,7 @@ def view_course():
         if selected_index:
             listbox.delete(selected_index)
                 
-            csv_path = 'data/course.csv'
+            csv_path = 'ssis/data/course.csv'
             with open(csv_path, 'r', newline = '') as student_file:
                 data = list(csv.reader(student_file))
                     
