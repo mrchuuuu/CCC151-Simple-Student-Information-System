@@ -1,6 +1,6 @@
 from tkinter import *
-import csv
 from tkinter.ttk import Combobox
+import csv
     
 def view_student():
     students_view_window = Toplevel()
@@ -261,16 +261,16 @@ def view_course():
                     if i not in selected_index:
                         writer.writerow(row)
                 
-                student_file.close()
-                
+                student_file.close()   
+                            
 if __name__ == "__main__":
     ssis_app = Tk()
     ssis_app.title("Simple Student Information System")
     ssis_app.geometry("500x200")    
     ssis_app.configure(bg = '#c0c5c9')    
-    #app_frame = Frame(ssis_app, padx = 50, pady= 50)
+    #app_frame = LabelFrame(ssis_app, padx = 50, pady= 50)
     #app_frame.pack(padx = 10, pady = 10)
-    
+   
     title = Label(ssis_app, 
                   text = "Simple Student Information System", 
                   bg = '#c0c5c9', 
