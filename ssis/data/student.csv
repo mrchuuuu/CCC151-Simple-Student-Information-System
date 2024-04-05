@@ -1,2 +1,101 @@
 Name,ID# YYYY-MMMM,Year Level,Gender,Course
-Adrian Raye A. Tan,2021-0870,2,Male,BSCS
+Adrian Raye Tan,2021-0870,2,Male,BSCS
+Juan Dela Cruz,2022-1456,1,Male,BSCS
+Maria Santos,2022-0891,2,Female,BSIT
+Jose Garcia,2022-0325,3,Male,BSCA
+Ana Reyes,2022-1742,1,Female,BSIS
+Pedro Hernandez,2022-1999,4,Male,BSCS
+Sofia Martinez,2022-0503,2,Female,BSIT
+Diego Rodriguez,2022-0789,3,Male,BSCA
+Isabela Gomez,2022-1024,1,Female,BSIS
+Luis Torres,2022-0624,4,Male,BSCS
+Andrea Fernandez,2022-1150,2,Female,BSIT
+Miguel Lopez,2022-1832,3,Male,BSCA
+Camila Ramirez,2022-0198,1,Female,BSIS
+Carlos Perez,2022-1234,4,Male,BSCS
+Valentina Hernandez,2022-0876,2,Female,BSIT
+Daniel Gonzalez,2022-1459,3,Male,BSCA
+Laura Sanchez,2022-0345,1,Female,BSIS
+Alejandro Rivera,2022-0512,4,Male,BSCS
+Fernanda Diaz,2022-0901,2,Female,BSIT
+Javier Cruz,2022-1098,3,Male,BSCA
+Ethan Dela Cruz,2022-1456,1,Male,BSCS
+Olivia Santos,2022-0891,2,Female,BSIT
+Noah Garcia,2022-0325,3,Male,BSCA
+Ava Reyes,2022-1742,1,Female,BSIS
+Liam Hernandez,2022-1999,4,Male,BSCS
+Sophia Martinez,2022-0503,2,Female,BSIT
+Mason Rodriguez,2022-0789,3,Male,BSCA
+Isabella Gomez,2022-1024,1,Female,BSIS
+William Torres,2022-0624,4,Male,BSCS
+Emma Fernandez,2022-1150,2,Female,BSIT
+James Lopez,2022-1832,3,Male,BSCA
+Amelia Ramirez,2022-0198,1,Female,BSIS
+Alexander Perez,2022-1234,4,Male,BSCS
+Charlotte Hernandez,2022-0876,2,Female,BSIT
+Michael Gonzalez,2022-1459,3,Male,BSCA
+Emily Sanchez,2022-0345,1,Female,BSIS
+Benjamin Rivera,2022-0512,4,Male,BSCS
+Abigail Diaz,2022-0901,2,Female,BSIT
+Daniel Cruz,2022-1098,3,Male,BSCA
+LeBron James,2022-1456,1,Male,BSCS
+Kevin Durant,2022-0891,2,Male,BSIT
+Stephen Curry,2022-0325,3,Male,BSCA
+Kawhi Leonard,2022-1742,1,Male,BSIS
+Giannis Antetokounmpo,2022-1999,4,Male,BSCS
+James Harden,2022-0503,2,Male,BSIT
+Anthony Davis,2022-0789,3,Male,BSCA
+Luka Dončić,2022-1024,1,Male,BSIS
+Joel Embiid,2022-0624,4,Male,BSCS
+Nikola Jokić,2022-1150,2,Male,BSIT
+Damian Lillard,2022-1832,3,Male,BSCA
+Kyrie Irving,2022-0198,1,Male,BSIS
+Jimmy Butler,2022-1234,4,Male,BSCS
+Karl-Anthony Towns,2022-0876,2,Male,BSIT
+Paul George,2022-1459,3,Male,BSCA
+Devin Booker,2022-0345,1,Male,BSIS
+Donovan Mitchell,2022-0512,4,Male,BSCS
+Jayson Tatum,2022-0901,2,Male,BSIT
+Chris Paul,2022-1098,3,Male,BSCA
+June Mar Fajardo,2022-1456,1,Male,BSCS
+Robert Jaworski,2022-0891,2,Male,BSIT
+Alvin Patrimonio,2022-0325,3,Male,BSCA
+James Yap,2022-1742,1,Male,BSIS
+Vic Manuel,2022-1999,4,Male,BSCS
+Calvin Abueva,2022-0503,2,Male,BSIT
+Jayson Castro,2022-0789,3,Male,BSCA
+Japeth Aguilar,2022-1024,1,Male,BSIS
+Mark Caguioa,2022-0624,4,Male,BSCS
+Paul Lee,2022-1150,2,Male,BSIT
+Chris Ross,2022-1832,3,Male,BSCA
+LA Tenorio,2022-0198,1,Male,BSIS
+Marc Pingris,2022-1234,4,Male,BSCS
+Arwind Santos,2022-0876,2,Male,BSIT
+Beau Belga,2022-1459,3,Male,BSCA
+Alex Cabagnot,2022-0345,1,Male,BSIS
+Jeth Troy Rosario,2022-0512,4,Male,BSCS
+RR Pogoy,2022-0901,2,Male,BSIT
+Stanley Pringle,2022-1098,3,Male,BSCA
+Albert Einstein,2022-1456,1,Male,BSCS
+Marie Curie,2022-0891,2,Female,BSIT
+Isaac Newton,2022-0325,3,Male,BSCA
+Charles Darwin,2022-1742,1,Male,BSIS
+Galileo Galilei,2022-1999,4,Male,BSCS
+Ada Lovelace,2022-0503,2,Female,BSIT
+Stephen Hawking,2022-0789,3,Male,BSCA
+Nikola Tesla,2022-1024,1,Male,BSIS
+Jane Goodall,2022-0624,4,Female,BSCS
+Richard Feynman,2022-1150,2,Male,BSIT
+Alan Turing,2022-1832,3,Male,BSCA
+Rosalind Franklin,2022-0198,1,Female,BSIS
+Leonardo da Vinci,2022-1234,4,Male,BSCS
+Ada Yonath,2022-0876,2,Female,BSIT
+Max Planck,2022-1459,3,Male,BSCA
+Louis Pasteur,2022-0345,1,Male,BSIS
+Cecilia Payne-Gaposchkin,2022-0512,4,Female,BSCS
+James Clerk Maxwell,2022-0901,2,Male,BSIT
+Niels Bohr,2022-1098,3,Male,BSCA
+Caine Ivan Bautista, 2022-0378,2,Male,BSCS
+Mike Hawk, 2021-0099,4,Male,BSCS
+Karl Marx, 2020-1720,1,Male,BSIT
+Razzie Binx, 2023-0605,1,Male,BSCA
