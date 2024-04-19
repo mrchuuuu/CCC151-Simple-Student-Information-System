@@ -17,11 +17,12 @@ def view_student():
                       height = 12, 
                       bg = '#c0c5c9')
     listbox.pack(padx = 10, pady = 10)
+    
     def update(data):
         listbox.delete(0, END)
         
-        for item in data:
-            listbox.insert(END, item)
+        for row in data:
+            listbox.insert(END, row)
 
     def fillout(event):
         student_search_entry.delete(0, END)
@@ -34,9 +35,9 @@ def view_student():
             data = student_data
         else:
             data = []
-            for item in student_data:
-                if typed.lower() in item.lower():
-                    data.append(item)
+            for row in student_data:
+                if typed.lower() in row.lower():
+                    data.append(row)
     
         update(data)
 
@@ -196,9 +197,10 @@ def view_student():
                                  pady = 5, 
                                  bg = '#9cc3a3',
                                  command = lambda: edit_selected())
-    button_edit_students.pack(pady = 5)  
+    button_edit_students.pack(pady = 5)
+      
     def edit_selected():
-        selected_index = listbox.curselection()
+        selected_index = listbox.curselection()[0]
         if selected_index:
             #listbox.delete(selected_index)
                 
@@ -209,8 +211,12 @@ def view_student():
                 writer = csv.writer(student_file)
                 for i, row in enumerate(data):
                     if i not in selected_index:
-                        writer.writerow(row)
-                        
+                       writer.writerow(row)
+            with open(csv_path, 'r', newline = '') as student_file:           
+                reader = csv.reader(student_file)
+                if i == selected_index:
+                        student_name, student_id, student_year, student_gender, student_course = row
+            
             students_add_window = Toplevel()
             students_add_window.title("Edit Student Details")
             add_window_label = Label(students_add_window, bg = '#5c9ca3')
@@ -220,12 +226,13 @@ def view_student():
             enter_name.grid(row = 0, column = 0)
             student_name_input = Entry(add_window_label, width = 30)
             student_name_input.grid(row = 0, column = 1)
+            student_name_input.insert(0, student_name)
                     
             enter_id = Label(add_window_label, text = "Enter Student ID# YYYY-MMMM: ", bg = '#5c9ca3')
             enter_id.grid(row = 1, column = 0)
             student_id_input = Entry(add_window_label, width = 30)
             student_id_input.grid(row = 1, column = 1)
-            student_id_input.insert(0, selected_index)   
+            student_id_input.insert(0, student_id)   
             
             enter_year = Label(add_window_label, text = "Enter Student Year Level: ", bg = '#5c9ca3')
             enter_year.grid(row = 2, column = 0)
@@ -235,11 +242,13 @@ def view_student():
             """
             student_year_input = Combobox(add_window_label, values = ["1", "2", "3", "4"])
             student_year_input.grid(row = 2, column = 1)
+            student_year_input.insert(0, student_year)
                 
             enter_gender = Label(add_window_label, text = "Enter Student Gender: ", bg = '#5c9ca3')
             enter_gender.grid(row = 3, column = 0)
             student_gender_input = Entry(add_window_label, width = 30)
             student_gender_input.grid(row = 3, column = 1)
+            student_gender_input.insert(0, student_gender)
             
             enter_course = Label(add_window_label, text = "Select Course Code: ", bg = '#5c9ca3')
             enter_course.grid(row = 4, column = 0)
